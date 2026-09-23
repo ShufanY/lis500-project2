@@ -1,0 +1,6 @@
+/* Reset default browser spacing so all pages start with aconsistent layout. SY */
+* {
+  box-sizing: border-box; /* Include padding and border in the total width and height. SY */
+  margin: 0;
+  padding: 0;
+}

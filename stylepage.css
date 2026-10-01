@@ -1,6 +1,64 @@
-/* Reset default browser spacing so all pages start with aconsistent layout. SY */
+/* Reset default browser spacing so all pages start with a consistent layout. SY */
 * {
-  box-sizing: border-box; /* Include padding and border in the total width and height. SY */
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box; /* Include padding and border in the total width and  height. SY */
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the default typography and background color for the site. SY */
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #243746;
+    background-color: #F7F3EC;
+}
+
+/* Header - SY
+------------------------*/
+/* Use Flexbox so the site name and navigation can stay on the left and right sides and remain vertically aligned. SY */
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 24px 120px;
+    box-shadow: 0px 2px 8px rgba(36, 55, 70, 0.1);
+    margin-bottom: 80px;
+}
+
+/* Set the header link color and remove the default underline. SY */
+header a {
+    color: #243746;
+    text-decoration: none;
+}
+
+.site_name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+}
+
+/* Keep tabs in one row with equal spacing and add padding to make each tab easier to click. SY */
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+.nav_tab {
+    font-size: 16px;
+    padding: 12px;
+}
+
+/* Change the text color on hover to give users a clear visual response. SY */
+.nav_tab:hover {
+    color: #9985B9;
+}
+
+/* Footer - SY
+------------------------*/
+footer {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #F7F3EC;
+    background-color: #A79ABB;
+    padding: 24px 120px;
 }

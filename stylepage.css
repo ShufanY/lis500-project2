@@ -11,7 +11,11 @@ body {
     font-weight: 400;
     color: #243746;
     background-color: #F7F3EC;
+    min-height: 100vh; /* Make the page fill the browser window. SY */
+    display: flex;
+    flex-direction: column;
 }
+
 
 /* Header - SY
 ------------------------*/
@@ -22,7 +26,8 @@ header {
     align-items: center;
     padding: 24px 120px;
     box-shadow: 0px 2px 8px rgba(36, 55, 70, 0.1);
-    margin-bottom: 80px;
+    position: relative;
+    z-index: 10; /* Keep the header and its shadow above the page content. SY */
 }
 
 /* Set the header link color and remove the default underline. SY */
@@ -51,6 +56,237 @@ nav {
 .nav_tab:hover {
     color: #9985B9;
 }
+
+/* Highlight the current page in the navigation so users can see where they are. SY */
+.active_tab {
+    color: #9985B9;
+}
+
+
+/* Home - SY
+------------------------*/
+.home {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative; /* Use a relative container so the banner can be positioned. SY */
+    flex: 1; /* Make the home section fill the remaining space between the header and footer. SY */
+}
+
+.home_intro {
+    padding: 72px 0 200px 120px;
+}
+
+.home_title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: #9985B9;
+    margin-bottom: 20px;
+}
+
+.home_subtitle {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.home_description {
+    font-size: 18px;
+    line-height: 1.5;
+    border-left: 4px solid rgba(153, 133, 185, 0.5);
+    padding: 8px 0 8px 16px;
+    margin-bottom: 96px;
+}
+
+.home_cta {
+    width: 360px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0 20px;
+    margin-bottom: 12px;
+}
+
+.home_cta span {
+    font-weight: 500;
+    color: #4F7F79;
+}
+
+/* Use Flexbox to keep the button text and arrow aligned in one row. SY */
+.home_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 360px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F7F3EC;
+    background-color: #4F7F79;
+    padding: 16px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.home_button:hover {
+    background-color: #4E8E86;
+}
+
+.home_button img {
+    width: 24px;
+}
+
+.home_banner {
+    position: absolute;
+    left: 640px;
+    top: 0;
+    z-index: -1; /* Keep the banner behind the text. SY */
+    height: 110%; /* Make the banner fill the space. SY */
+    width: auto;
+}
+
+
+/* Resources - SY
+----------------------- */
+/* Keep the content centered with consistent spacing between each part. SY */
+.resources {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 80px 120px 160px;
+}
+
+.resources_intro {
+    text-align: center;
+}
+
+.resources_title {
+    font-size: 32px;
+    font-weight: 400;
+    display: inline-block; /* Allow the underline to be the same width as the text. SY */
+}
+
+.resources_title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(153, 133, 185, 0.5);
+    margin-top: 4px;
+}
+
+.resources_description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 36px;
+}
+
+.resources_definition {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Use Flexbox to keep each definition title in a fixed left column and the explanation on the right. SY */
+.definition_card {
+    display: flex;
+    gap: 24px;
+    position: relative;
+    padding-bottom: 24px;
+}
+
+/* Add a divider between each definition. SY */
+.definition_card::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgba(36, 55, 70, 0.1);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* Remove the divider after the last definition. SY */
+.definition_card:last-child::after {
+  display: none;
+}
+
+.definition_title {
+    width: 164px;
+    font-size: 20px;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+
+.definition_content {
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.definition_content a,
+.related_list a {
+    color: #9985B9;
+    font-weight: 500;
+}
+
+.reflection_title,
+.question_title,
+.related_title {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Use a light background to emphasize our reflections. SY */
+.reflection_content {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 24px 48px;
+    margin-top: 20px;
+    background-color: rgba(153, 133, 185, 0.15);
+    border-radius: 10px;
+}
+
+.resources_question,
+.resources_related {
+    width: 100%;
+    padding: 0 48px;
+}
+
+.question_content {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.question_content img {
+    width: 100px;
+    height: 100px;
+}
+
+.question_list {
+    font-size: 16px;
+    line-height: 2;
+    list-style-position: inside; /* Keep the list numbers inside the list area to prevent them from overlapping with the image. SY */
+}
+
+.related_list {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    list-style: none;
+}
+
 
 /* Footer - SY
 ------------------------*/

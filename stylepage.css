@@ -356,7 +356,7 @@ footer {
     gap: 80px;
 }
 
-*/Colored lines at the top of each profile card. */
+/* Colored lines at the top of each profile card. */
 .profile_card::before {
     content: "";
     position: absolute; 
@@ -367,7 +367,7 @@ footer {
 }
 
 .shu_profile::before {
-    background-color: rgba(201, 111, 91, 0.35):
+    background-color: rgba(201, 111, 91, 0.35);
 }
 
 .tanya_profile::before {

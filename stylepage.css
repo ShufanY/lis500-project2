@@ -623,6 +623,7 @@ footer {
     font-size: 14px; 
     font-weight: 500;
     line-height: 160%;
+    letter-spacing: -0.2px;
     text-align: center;
     color: #73818D;
     white-space: nowrap;

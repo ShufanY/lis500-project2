@@ -544,7 +544,7 @@ footer {
     object-fit: cover;
 }
 .hero_intro_section p {
-    width: 408px;
+    width: 409px;
 }
 /* Career and Accomplishments */
 .hero_career{
@@ -558,6 +558,7 @@ footer {
     font-size: 16px; 
     font-weight: 500;
     line-height: 160%;
+    letter-spacing: 0;
     color: #243746;
 } 
 

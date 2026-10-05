@@ -356,6 +356,24 @@ footer {
     gap: 80px;
 }
 
+*/Colored lines at the top of each profile card. */
+.profile_card::before {
+    content: "";
+    position: absolute; 
+    top: 0 
+    left: 32px;
+    right: 32px;
+    height: 2px;
+}
+
+.shu_profile::before {
+    background-color: rgba(201, 111, 91, 0.35):
+}
+
+.tanya_profile::before {
+    background-color: rgba(79, 127, 121, 0.35);
+}
+
 /* Indiviual profile cards. */
 .profile_card {
     width: 560px;
@@ -429,7 +447,7 @@ footer {
 
         font-family: 'Inter', sans-serif;
         
-        font-size: 16 px;
+        font-size: 16px;
         font-weight: 500;
         line-height: 1.6;
 

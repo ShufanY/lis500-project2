@@ -356,7 +356,7 @@ footer {
     gap: 80px;
 }
 
-/* Colored lines at the top of each profile card. */
+/*Colored lines at the top of each profile card. */
 .profile_card::before {
     content: "";
     position: absolute; 

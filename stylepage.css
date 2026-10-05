@@ -367,11 +367,11 @@ footer {
 }
 
 .shu_profile::before {
-    background-color: rgba(201, 111, 91, 0.35);
+    background-color: #C96F5B;
 }
 
 .tanya_profile::before {
-    background-color: rgba(79, 127, 121, 0.35);
+    background-color: #4F7F79;
 }
 
 /* Indiviual profile cards. */

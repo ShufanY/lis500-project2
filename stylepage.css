@@ -298,3 +298,119 @@ footer {
     background-color: #A79ABB;
     padding: 24px 120px;
 }
+
+/* About Us - TM
+------------------------*/
+/*Center the About Us introduction and keep spacing consistent with the other pages. */
+.about_page{
+    flex: 1;
+    padding: 72px 120px 160px;
+}
+
+.about_intro {
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.about_intro h1 {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+/*Purple underline beneath the About Us heading. */
+.about_intro h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(153, 133, 185, 0.15)
+    margin-top: 4px;
+}
+
+.about_intro p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 36px 
+}
+
+/*Keep both profile cards side by side, */
+.profile_container { 
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    gap: 64px:
+} 
+
+/*Profile card styling. */
+.profile_card { 
+    flex: 1;
+    position: relative; 
+    padding: 28px 32px 36px;
+    background-color: #F7F3EC;
+    broder-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(36, 55, 70, 0.15);
+}
+
+/*Colored line at the top of each card. */
+.profile_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 32px;
+    right: 32px;
+    height: 3px;
+}
+
+.shu_profile::before {
+    background-color: rgba(218, 123, 101, 0.35);
+}
+
+.tanya_profile:before {
+    background-color: rgba(79, 127, 121, 0.35):
+}
+
+/* Keep profile picture and name beside each other. */
+.profile_header { 
+    display: flex;
+    align-items: center; 
+    gap: 16px; 
+    margine-bottom: 28px;
+}
+
+.profile_image {
+    width: 64px; 
+    height: 64px; 
+    object-fit: cover; 
+    broader-radius: 50%; 
+}
+
+.profile_title h2 {
+    font-size: 22px;
+    front-weight: 500;
+    margin-bottom: 6px;
+}
+
+.shu_intrests,
+.tanya_intrests {
+    font-size: 12 px;
+    line-height: 1.4;
+    }
+
+.shu_intrests {
+    color: #D66f58;
+}
+.tanya_intrests {
+    color: #4F7F79;
+}
+
+/* Biography text. */
+    .profile_bio {
+        front-size: 16 px;
+        line-height: 1.6;
+    }
+
+
+        
+    
+

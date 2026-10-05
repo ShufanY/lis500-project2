@@ -496,13 +496,13 @@ footer {
 }
 .title_second_line{
     position: relative;
-    display:incline-block;
+    display:inline-block;
     font-weight: 500;
     color: #243746;
 }
-.title_second_line::after{
+.title_second_line::after {
     content: "";
-    positoin:absolute;
+    position:absolute;
     left: 0;
     right: 0;
     bottom: -5px;

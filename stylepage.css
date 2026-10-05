@@ -384,8 +384,8 @@ footer {
 .profile_image {
     width: 86px; 
     height: 86px; 
-    object-fit: cover; 
-    broader-radius: 50%; 
+    border-radius: 50%; 
+    object-fit: cover;  
     flex-shrink: 0;
 }
 

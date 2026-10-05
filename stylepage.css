@@ -456,6 +456,233 @@ footer {
         margin:0;
     }
 
+/* Dr. Gladys West - Tech Hero Page - TM
+----------------------------------------*/
+
+/* Main page containter */
+.tech_hero_page {
+    flex: 1
+    width: 840px;
+    margin: 0 auto; 
+    padding: 52 px 0 160px;
+    color: #243746;
+}
+
+/* Page Title */
+.tech_hero_intro {
+    width: 100%
+    text-align: center; 
+    margin-bottom: 80px; 
+}
+
+.tech_hero_intro h1 {
+    width: 833px;
+    margin: 0 auto; 
+    font-family: "Inter", sans-serif; 
+    font-size: 32px; 
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0;
+    text-align: center;
+    color: #243746;
+}
+
+.tech_hero_intro h1 span {
+    position: relative; 
+    display: inline-block; 
+    font-weight: 600;
+    color: #9985B9;
+}
+
+/* Purple underline beneath Dr. Gladys West's Journey */
+.tech_hero_intro h1 span::after {
+    content:"";
+    position: absolute; 
+    left:0; 
+    right: 0;
+    bottom: -5px; 
+    height: 3px;
+    background-color: #9985B9;
+}
+
+/* Shared two-column section */
+.hero_section {
+    width: 840px; 
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.hero_section p {
+    margin: 0;
+    font-family: "Inter", sans-serif; 
+    font-size: 16px; 
+    font-weight: 500;
+    line-height: 160%;
+    color: #243746;
+}
+
+/*First section - Present-Day Photo and Intro*/
+.hero_intro_section{
+    margin-bottom: 24px;
+}
+.hero_present_image {
+    width: 408px;
+    height: 273px;
+    object-fit: cover;
+}
+.hero_intro_section p {
+    width: 408px;
+}
+/* Career and Accomplishments */
+.hero_career{
+    width: 840px;
+    margin: 0 0 48px;
+}
+.hero_career p {
+    width: 840px;
+    margin: 0;
+    font-family: "Inter", sans-serif; 
+    font-size: 16px; 
+    font-weight: 500;
+    line-height: 160%;
+    color: #243746;
+} 
+
+/*Legacy Highlight*/ 
+.hero_legacy {
+    box-sizing: border-box;
+    width: 840px;
+    height: 74px; 
+    margin: 0 0 48px;
+    padding: 0 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+    background color: 
+    border radius: 10px;
+}
+
+.hero_legacy p {
+    width: 716px;
+    margin: 0;
+    font-family: "Inter", sans-serif; 
+    font-size: 18px; 
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+    color: #243746;
+}
+
+/* Race, Gender and Intersectionality*/
+.hero_barriers{
+    margin-bottom: 80px;
+}
+.hero_barriers p {
+    width: 408px;
+}
+.hero_historical_image {
+    width: 408px;
+    height: 305px;
+    object-fit: cover;
+}
+
+/* Video Section*/
+.hero_video {
+    width: 840px;
+    text-align: center;
+}
+.hero_video h2 {
+    margin: 0 0 24px;
+    font-family: "Inter", sans-serif; 
+    font-size: 20px; 
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+    color: #243746;
+}
+.hero_video_embded {
+    display: block; 
+    box-sizing: border-box;
+    width: 840px;
+    height: 470px;
+    margin: 0;
+    border: 0;
+}
+.video_description{
+    width: 768px;
+    margin: 24px auto 0;
+    font-family: "Inter", sans-serif; 
+    font-size: 14px; 
+    font-weight: 500;
+    line-height: 160%;
+    text-align: center;
+    color: #73818D;
+}
+
+/*Related Resources*/
+.hero_resources{
+    width: 840px;
+    margin-top: 64px;
+    text-align: center;
+}
+.hero_resources h2{
+    position: relative;
+    display: inline-block;
+    margin: 0 0 40px;
+    font-family: "Inter", sans-serif; 
+    font-size: 24px; 
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+    color: #243746;
+}
+
+/* Purple underline beneath Related Resource */
+.hero_resources h2 span::after {
+    content:"";
+    position: absolute; 
+    width: 100%;
+    height: 3px;
+    left:0;
+    bottom: -6px; 
+    background-color: #9985B9;
+    
+/* Individual resources */
+.resource_item {
+    width: 768px;
+    margin: 0 auto 32px;
+    text-align: center;
+}
+.resource_item a {
+    font-family: "Inter", sans-serif; 
+    font-size: 16px; 
+    font-weight: 600;
+    line-height: 160%;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.resource_item a:hover {
+    color: #243746;
+}
+.resource_item p {
+    margin: 6px 0 0;
+    font-family: "Inter", sans-serif; 
+    font-size: 14px; 
+    font-weight: 500;
+    line-height: 160%;
+    text-align: center;
+    color: #73818D;
+}
+    
+    
+
+
+    
+
+    
 
         
     

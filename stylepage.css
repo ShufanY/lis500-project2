@@ -461,16 +461,16 @@ footer {
 
 /* Main page containter */
 .tech_hero_page {
-    flex: 1
+    flex: 1;
     width: 840px;
     margin: 0 auto; 
-    padding: 52 px 0 160px;
+    padding: 52px 0 160px;
     color: #243746;
 }
 
 /* Page Title */
 .tech_hero_intro {
-    width: 100%
+    width: 100%;
     text-align: center; 
     margin-bottom: 80px; 
 }
@@ -561,8 +561,8 @@ footer {
     align-items: center;
     justify-content: center; 
 
-    background color: 
-    border radius: 10px;
+    background color: #E9E4E7; 
+    border-radius: 10px;
 }
 
 .hero_legacy p {
@@ -603,7 +603,7 @@ footer {
     text-align: center;
     color: #243746;
 }
-.hero_video_embded {
+.hero_video_embed {
     display: block; 
     box-sizing: border-box;
     width: 840px;
@@ -641,7 +641,7 @@ footer {
 }
 
 /* Purple underline beneath Related Resource */
-.hero_resources h2 span::after {
+.hero_resources h2::after {
     content:"";
     position: absolute; 
     width: 100%;
@@ -649,7 +649,7 @@ footer {
     left:0;
     bottom: -6px; 
     background-color: #9985B9;
-    
+}   
 /* Individual resources */
 .resource_item {
     width: 768px;
@@ -661,6 +661,7 @@ footer {
     font-size: 16px; 
     font-weight: 600;
     line-height: 160%;
+    color: #9985B9;
     text-decoration: underline;
     text-underline-offset: 3px;
 }

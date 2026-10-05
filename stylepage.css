@@ -628,59 +628,55 @@ footer {
 }
 
 /*Related Resources*/
-.hero_resources{
+.hero_resources {
     width: 840px;
     margin-top: 64px;
-    text-align: center;
+    text-align: left;
 }
-.hero_resources h2{
-    position: relative;
-    display: inline-block;
-    margin: 0 0 40px;
+
+.hero_resources h2 {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 32px;
     font-family: "Inter", sans-serif; 
-    font-size: 24px; 
+    font-size: 20px; 
     font-weight: 600;
     line-height: 130%;
     text-align: center;
     color: #243746;
 }
 
-/* Purple underline beneath Related Resource */
+/*Remove the purple underline */
 .hero_resources h2::after {
-    content:"";
-    position: absolute; 
-    width: 100%;
-    height: 3px;
-    left:0;
-    bottom: -6px; 
-    background-color: #9985B9;
+   display: none;
 }   
+
 /* Individual resources */
 .resource_item {
-    width: 768px;
+    width: 840px;
     margin: 0 auto 32px;
-    text-align: center;
+    text-align: left;
 }
 .resource_item a {
     font-family: "Inter", sans-serif; 
-    font-size: 16px; 
-    font-weight: 600;
+    font-size: 14px; 
+    font-weight: 500;
     line-height: 160%;
     color: #9985B9;
     text-decoration: underline;
-    text-underline-offset: 3px;
+    text-underline-offset: 2px;
 }
 .resource_item a:hover {
     color: #243746;
 }
 .resource_item p {
-    margin: 6px 0 0;
+    margin: 0;
     font-family: "Inter", sans-serif; 
     font-size: 14px; 
     font-weight: 500;
     line-height: 160%;
-    text-align: center;
-    color: #73818D;
+    text-align: left;
+    color: #243746;
 }
     
     

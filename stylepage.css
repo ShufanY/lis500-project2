@@ -497,15 +497,7 @@ footer {
     letter-spacing: 0;
     color: #9985B9;
 }
-.tech_hero_intro h1 span::after{
-    content:"";
-    position: absolute; 
-    left:0;
-    right: 0;
-    bottom: -5px; 
-    height: 3px;
-    background-color: #9985B9;
-    
+
 /* Purple underline beneath Dr. Gladys West's Journey */
 .tech_hero_intro h1 span::after {
     content:"";
@@ -574,7 +566,7 @@ footer {
     align-items: center;
     justify-content: center; 
 
-    background color: #E9E4E7; 
+    background-color: #E9E4E7; 
     border-radius: 10px;
 }
 
@@ -597,7 +589,7 @@ footer {
     width: 408px;
 }
 .hero_historical_image {
-    width: 408px;
+    width: 409px;
     height: 305px;
     object-fit: cover;
 }

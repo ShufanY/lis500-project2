@@ -625,6 +625,7 @@ footer {
     line-height: 160%;
     text-align: center;
     color: #73818D;
+    white-space: nowrap;
 }
 
 /*Related Resources*/

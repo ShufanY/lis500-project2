@@ -490,10 +490,22 @@ footer {
 .tech_hero_intro h1 span {
     position: relative; 
     display: inline-block; 
-    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 600; 
+    line-height: 130%;
+    letter-spacing: 0;
     color: #9985B9;
 }
-
+.tech_hero_intro h1 span::after{
+    content:"";
+    position: absolute; 
+    left:0;
+    right: 0;
+    bottom: -5px; 
+    height: 3px;
+    background-color: #9985B9;
+    
 /* Purple underline beneath Dr. Gladys West's Journey */
 .tech_hero_intro h1 span::after {
     content:"";

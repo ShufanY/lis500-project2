@@ -486,8 +486,7 @@ footer {
     text-align: center;
     color: #243746;
 }
-
-.tech_hero_intro h1 > span: first-of-type { 
+.tech_hero_intro h1 > span:first-of-type { 
     font-family: "Inter", sans-serif;
     font-size: 32px;
     font-weight: 600; 
@@ -497,16 +496,16 @@ footer {
 }
 .title_second_line{
     position: relative;
-    display: incline-block;
+    display:incline-block;
     font-weight: 500;
     color: #243746;
 }
 .title_second_line::after{
     content: "";
-    positoin: absolute;
+    positoin:absolute;
     left: 0;
     right: 0;
-    bottom -5px;
+    bottom: -5px;
     height: 3px;
     background-color: #9985B9;
 }

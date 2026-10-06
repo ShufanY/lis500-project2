@@ -235,6 +235,11 @@ nav {
     font-weight: 500;
 }
 
+.definition_content a:hover,
+.related_list a:hover {
+    color: #243746;
+}
+
 .reflection_title,
 .question_title,
 .related_title {
@@ -299,31 +304,31 @@ footer {
     padding: 24px 120px;
 }
 
+
 /* About Us - TM
 ------------------------*/
 
-/*Main About Us Page*/
+/*Main About Us Page - TM*/
 .about_page{
     flex: 1;
-    padding: 52px 120px 160px;
+    padding: 80px 120px 160px;
 }
 
-/*About Us introduction.*/
+/*About Us introduction. - TM*/
 .about_intro {
     text-align: center;
-    margin-bottom: 72px;
+    margin-bottom: 80px;
 }
 
 .about_intro h1 {
     display: inline-block;
     font-family:"Inter", sans-serif;
     font-size: 32px;
-    font-weight: 500;
-    line-height: 1.3;
+    font-weight: 400;
     color: #243746;
 }
 
-/*Purple underline beneath the About Us heading. */
+/*Purple underline beneath the About Us heading. - TM*/
 .about_intro h1::after {
     content: "";
     display: block;
@@ -333,30 +338,27 @@ footer {
     margin-top: 4px;
 }
 
-/*Introductory description.*/
+/*Introductory description. - TM*/
 .about_intro p {
     width: 600px;
     margin: 36px auto 0;
 
     font-family: 'Inter', sans-serif;
     font-size: 18px;
-    font-weight: 500;
-    line-height: 1.6;
+    font-weight: 400;
+    line-height: 1.5;
 
     color: #243746;
     text-align: center; 
 } 
 
-/*Profile cards */
+/*Profile cards - TM*/
 .profile_container { 
-    width: 1200px;
-    margin: 0 auto; 
-
     display: flex;
-    gap: 80px;
+    gap: 64px;
 }
 
-/*Colored lines at the top of each profile card. */
+/*Colored lines at the top of each profile card. - TM*/
 .profile_card::before {
     content: "";
     position: absolute; 
@@ -374,10 +376,10 @@ footer {
     background-color: #4F7F79;
 }
 
-/* Indiviual profile cards. */
+/* Indiviual profile cards. - TM*/
 .profile_card {
-    width: 560px;
-    height: 360px;
+    width: 50%;
+    aspect-ratio: 560 / 360; /* Keep the card proportional to prevent overflow on narrower screens. SY */
 
     position: relative;
 
@@ -389,7 +391,7 @@ footer {
     box-shadow: 0 2px 8px rgba(36, 55, 70, 0.15);
 }
 
-/* profile image and title */
+/* profile image and title - TM*/
 .profile_header { 
     display: flex;
     align-items: center; 
@@ -398,7 +400,7 @@ footer {
     margin-bottom: 26px;
 }
 
-/*Profile picture. */
+/*Profile picture. - TM*/
 .profile_image {
     width: 86px; 
     height: 86px; 
@@ -408,48 +410,46 @@ footer {
     flex-shrink: 0;
 }
 
-/*Profile names. */
+/*Profile names. - TM*/
 .profile_title h2 {
     font-family: 'Inter', sans-serif;
     
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.3;
 
     color: #243746;
     margin: 0 0 4px;
 }
 
-/*Intrest text.*/
+/*Intrest text. - TM*/
 .shu_interests,
 .tanya_interests {
     font-family: 'Inter', sans-serif;
     
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.3;
     margin: 0;
     }
 
-/*Shu-Fan interest color. */
+/*Shu-Fan interest color. - TM*/
 .shu_interests {
     color: #C96F5B;
 }
 
-/*Tanya interest color. */
+/*Tanya interest color. - TM*/
 .tanya_interests {
     color: #4F7F79;
 }
 
-/* Biography text. */
+/* Biography text. - TM*/
     .profile_bio {
-        width: 496px;
-
         font-family: 'Inter', sans-serif;
         
         font-size: 16px;
-        font-weight: 500;
-        line-height: 1.6;
+        font-weight: 400;
+        line-height: 1.5;
 
         color: #243746;
 
@@ -459,16 +459,16 @@ footer {
 /* Dr. Gladys West - Tech Hero Page - TM
 ----------------------------------------*/
 
-/* Main page containter */
+/* Main page containter - TM*/
 .tech_hero_page {
     flex: 1;
     width: 840px;
     margin: 0 auto; 
-    padding: 52px 0 160px;
+    padding: 80px 0 136px;
     color: #243746;
 }
 
-/* Page Title */
+/* Page Title - TM*/
 .tech_hero_intro {
     width: 100%;
     text-align: center; 
@@ -480,8 +480,8 @@ footer {
     margin: 0 auto; 
     font-family: "Inter", sans-serif; 
     font-size: 32px; 
-    font-weight: 500;
-    line-height: 130%;
+    font-weight: 400;
+    line-height: 1.5;
     letter-spacing: 0;
     text-align: center;
     color: #243746;
@@ -489,15 +489,15 @@ footer {
 .tech_hero_intro h1 > span:first-of-type { 
     font-family: "Inter", sans-serif;
     font-size: 32px;
-    font-weight: 600; 
-    line-height: 130%;
+    font-weight: 500; 
+    line-height: 1.5;
     letter-spacing: 0;
     color: #9985B9;
 }
 .title_second_line{
     position: relative;
     display:inline-block;
-    font-weight: 500;
+    font-weight: 400;
     color: #243746;
 }
 .title_second_line::after {
@@ -505,11 +505,11 @@ footer {
     position:absolute;
     left: 0;
     right: 0;
-    bottom: -5px;
-    height: 3px;
-    background-color: #9985B9;
+    bottom: -4px;
+    height: 4px;
+    background-color: rgba(153, 133, 185, 0.5);
 }
-/* Shared two-column section */
+/* Shared two-column section - TM*/
 .hero_section {
     width: 840px; 
     display: flex;
@@ -521,12 +521,12 @@ footer {
     margin: 0;
     font-family: "Inter", sans-serif; 
     font-size: 16px; 
-    font-weight: 500;
-    line-height: 160%;
+    font-weight: 400;
+    line-height: 1.5;
     color: #243746;
 }
 
-/*First section - Present-Day Photo and Intro*/
+/*First section - Present-Day Photo and Intro - TM*/
 .hero_intro_section{
     margin-bottom: 24px;
 }
@@ -538,7 +538,7 @@ footer {
 .hero_intro_section p {
     width: 409px;
 }
-/* Career and Accomplishments */
+/* Career and Accomplishments - TM*/
 .hero_career{
     width: 840px;
     margin: 0 0 48px;
@@ -548,19 +548,18 @@ footer {
     margin: 0;
     font-family: "Inter", sans-serif; 
     font-size: 16px; 
-    font-weight: 500;
-    line-height: 160%;
+    font-weight: 400;
+    line-height: 1.5;
     letter-spacing: 0;
     color: #243746;
 } 
 
-/*Legacy Highlight*/ 
+/*Legacy Highlight - TM*/ 
 .hero_legacy {
     box-sizing: border-box;
     width: 840px;
-    height: 74px; 
     margin: 0 0 48px;
-    padding: 0 62px;
+    padding: 24px 62px;
 
     display: flex;
     align-items: center;
@@ -575,13 +574,13 @@ footer {
     margin: 0;
     font-family: "Inter", sans-serif; 
     font-size: 18px; 
-    font-weight: 600;
-    line-height: 130%;
+    font-weight: 500;
+    line-height: 1.2;
     text-align: center;
     color: #243746;
 }
 
-/* Race, Gender and Intersectionality*/
+/* Race, Gender and Intersectionality - TM*/
 .hero_barriers{
     margin-bottom: 80px;
 }
@@ -594,7 +593,7 @@ footer {
     object-fit: cover;
 }
 
-/* Video Section*/
+/* Video Section - TM*/
 .hero_video {
     width: 840px;
     text-align: center;
@@ -603,8 +602,8 @@ footer {
     margin: 0 0 24px;
     font-family: "Inter", sans-serif; 
     font-size: 20px; 
-    font-weight: 600;
-    line-height: 130%;
+    font-weight: 500;
+    line-height: 1.2;
     text-align: center;
     color: #243746;
 }
@@ -621,49 +620,49 @@ footer {
     margin: 24px auto 0;
     font-family: "Inter", sans-serif; 
     font-size: 14px; 
-    font-weight: 500;
-    line-height: 160%;
+    font-weight: 400;
+    line-height: 1.5;
     letter-spacing: -0.2px;
     text-align: center;
     color: #73818D;
     white-space: nowrap;
 }
 
-/*Related Resources*/
+/*Related Resources - TM*/
 .hero_resources {
     width: 840px;
-    margin-top: 64px;
+    margin-top: 80px;
     text-align: left;
 }
 
 .hero_resources h2 {
     display: block;
     width: fit-content;
-    margin: 0 auto 32px;
+    margin: 0 auto 24px;
     font-family: "Inter", sans-serif; 
     font-size: 20px; 
-    font-weight: 600;
-    line-height: 130%;
+    font-weight: 500;
+    line-height: 1.2;
     text-align: center;
     color: #243746;
 }
 
-/*Remove the purple underline */
+/*Remove the purple underline - TM*/
 .hero_resources h2::after {
    display: none;
 }   
 
-/* Individual resources */
+/* Individual resources - TM*/
 .resource_item {
     width: 840px;
-    margin: 0 auto 32px;
+    margin: 0 auto 24px;
     text-align: left;
 }
 .resource_item a {
     font-family: "Inter", sans-serif; 
-    font-size: 14px; 
+    font-size: 16px; 
     font-weight: 500;
-    line-height: 160%;
+    line-height: 1.5;
     color: #9985B9;
     text-decoration: underline;
     text-underline-offset: 2px;
@@ -674,20 +673,11 @@ footer {
 .resource_item p {
     margin: 0;
     font-family: "Inter", sans-serif; 
-    font-size: 14px; 
-    font-weight: 500;
-    line-height: 160%;
+    font-size: 16px; 
+    font-weight: 400;
+    line-height: 1.5;
     text-align: left;
     color: #243746;
 }
     
     
-
-
-    
-
-    
-
-        
-    
-

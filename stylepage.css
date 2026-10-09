@@ -1,6 +1,6 @@
 /* Reset default browser spacing so all pages start with a consistent layout. SY */
 * {
-    box-sizing: border-box; /* Include padding and border in the total width and  height. SY */
+    box-sizing: border-box; /* Include padding and border in the total width and height. SY */
     margin: 0;
     padding: 0;
 }
@@ -22,7 +22,7 @@ body {
 /* Use Flexbox so the site name and navigation can stay on the left and right sides and remain vertically aligned. SY */
 header {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding: 24px 120px;
     box-shadow: 0px 2px 8px rgba(36, 55, 70, 0.1);
@@ -54,12 +54,12 @@ nav {
 
 /* Change the text color on hover to give users a clear visual response. SY */
 .nav_tab:hover {
-    color: #9985B9;
+    color: #7C6699;
 }
 
 /* Highlight the current page in the navigation so users can see where they are. SY */
 .active_tab {
-    color: #9985B9;
+    color: #7C6699;
 }
 
 
@@ -81,7 +81,7 @@ nav {
     font-family: 'DM Serif Display', serif;
     font-size: 64px;
     font-weight: 400;
-    color: #9985B9;
+    color: #7C6699;
     margin-bottom: 20px;
 }
 
@@ -100,16 +100,12 @@ nav {
 }
 
 .home_cta {
-    width: 360px;
-    font-size: 18px;
+    width: 320px;
+    font-size: 16px;
     line-height: 1.5;
     padding: 0 20px;
     margin-bottom: 12px;
-}
-
-.home_cta span {
-    font-weight: 500;
-    color: #4F7F79;
+    color: #4B7772;
 }
 
 /* Use Flexbox to keep the button text and arrow aligned in one row. SY */
@@ -118,18 +114,18 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    width: 360px;
+    width: 320px;
     font-size: 18px;
     font-weight: 500;
     color: #F7F3EC;
-    background-color: #4F7F79;
+    background-color: #4B7772;
     padding: 16px 20px;
     border-radius: 50px;
     text-decoration: none;
 }
 
 .home_button:hover {
-    background-color: #4E8E86;
+    background-color: #598E88;
 }
 
 .home_button img {
@@ -231,7 +227,7 @@ nav {
 
 .definition_content a,
 .related_list a {
-    color: #9985B9;
+    color: #7C6699;
     font-weight: 500;
 }
 
@@ -292,6 +288,108 @@ nav {
     list-style: none;
 }
 
+/* Tech Heroes Overview - SY
+----------------------- */
+.tech_heroes_overview {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 80px 120px 160px;
+    flex: 1;
+}
+
+.heroes_overview_intro {
+    text-align: center;
+}
+
+.heroes_overview_title {
+    font-size: 32px;
+    font-weight: 400;
+    display: inline-block; /* Allow the underline to be the same width as the text. SY */
+}
+
+.heroes_overview_title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(153, 133, 185, 0.5);
+    margin-top: 4px;
+}
+
+.heroes_overview_description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 36px;
+}
+
+/* Place the two cards side by side. SY */
+.heroes_overview_cards {
+    display: flex;
+    gap: 40px;
+}
+
+.hero_card {
+    width: 50%;
+    aspect-ratio: 560 / 620;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(36, 55, 70, 0.15);
+    text-decoration: none;
+    color: #243746;
+}
+
+/* Change the shadow color on hover to show that the card is clickable. SY */
+.hero_card:hover {
+    box-shadow: 0 2px 12px rgba(153, 133, 185, 0.5);
+}
+
+/* Use the same image ratio for both cards and crop the extra area so the images do not stretch. SY */
+.hero_card_picture {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.hero_card_picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero_card_name {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 24px;
+    padding: 0 32px;
+}
+
+.hero_card_role {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 8px;
+    color: #7C6699;
+    padding: 0 32px;
+}
+
+.hero_card_description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 24px 0 32px;
+    padding: 0 32px;
+    /* Use the first paragraph from each profile as a preview and limit it to 4 lines so both cards stay the same height. SY */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
+}
+
+
 
 /* Footer - SY
 ------------------------*/
@@ -300,7 +398,7 @@ footer {
     font-size: 14px;
     text-align: center;
     color: #F7F3EC;
-    background-color: #A79ABB;
+    background-color: #7C6699;
     padding: 24px 120px;
 }
 
@@ -310,6 +408,8 @@ footer {
 
 /*Main About Us Page - TM*/
 .about_page{
+    max-width: 1200px;
+    margin: 0 auto;
     flex: 1;
     padding: 80px 120px 160px;
 }
@@ -355,7 +455,7 @@ footer {
 /*Profile cards - TM*/
 .profile_container { 
     display: flex;
-    gap: 64px;
+    gap: 40px;
 }
 
 /*Colored lines at the top of each profile card. - TM*/
@@ -369,11 +469,11 @@ footer {
 }
 
 .shu_profile::before {
-    background-color: #C96F5B;
+    background-color: rgba(201, 111, 91, 0.2);
 }
 
 .tanya_profile::before {
-    background-color: #4F7F79;
+    background-color: rgba(79, 127, 121, 0.2);
 }
 
 /* Indiviual profile cards. - TM*/
@@ -435,12 +535,12 @@ footer {
 
 /*Shu-Fan interest color. - TM*/
 .shu_interests {
-    color: #C96F5B;
+    color: #B4523C;
 }
 
 /*Tanya interest color. - TM*/
 .tanya_interests {
-    color: #4F7F79;
+    color: #4B7772;
 }
 
 /* Biography text. - TM*/
@@ -492,7 +592,7 @@ footer {
     font-weight: 500; 
     line-height: 1.5;
     letter-spacing: 0;
-    color: #9985B9;
+    color: #7C6699;
 }
 .title_second_line{
     position: relative;
@@ -663,7 +763,7 @@ footer {
     font-size: 16px; 
     font-weight: 500;
     line-height: 1.5;
-    color: #9985B9;
+    color: #7C6699;
     text-decoration: underline;
     text-underline-offset: 2px;
 }
@@ -680,4 +780,4 @@ footer {
     color: #243746;
 }
     
-    
+  

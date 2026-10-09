@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Heroes | Through Different Lenses</title>
+
+    <!-- Load Google Fonts before the stylesheet to keep typography consistent on the page. SY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylepage.css">
+</head>
+<body>
+    <!-- Shared header used on all pages. The site name and navigation are kept as two separate groups so Flexbox can place them on the left and right sides of the header. SY -->
+    <header>
+        <a href="index.html" class="site_name">Through Different Lenses</a>
+        <nav>
+            <a href="index.html" class="nav_tab">Home</a>
+            <a href="about_us.html" class="nav_tab">About Us</a>
+            <a href="resources.html" class="nav_tab">Resources</a>
+            <a href="tech_heroes.html" class="nav_tab active_tab">Tech Heroes</a>
+        </nav>
+    </header>
+
+    <!-- This overview page gives users one place to see both Tech Heroes before choosing a full profile. SY -->
+    <section class="tech_heroes_overview">
+        <div class="heroes_overview_intro">
+            <h1 class="heroes_overview_title">Our Tech Heroes</h1>
+            <p class="heroes_overview_description">
+                Meet two women who contributed to technology<br>
+                while challenging bias and barriers in the field.
+            </p>
+        </div>
+
+        <!-- Keep both profile cards in the same container so they can stay aligned. SY -->
+        <div class="heroes_overview_cards">
+
+            <!-- Make the entire card clickable so users can select the profile from anywhere on the card. SY -->
+            <a href="gladys_west.html" class="hero_card">
+
+                <!-- The wrapper keeps the profile image in the same ratio without stretching it. SY -->
+                <div class="hero_card_picture">
+                    <img src="images/presentlis500.png" alt="Dr. Gladys West">
+                </div>
+                <h2 class="hero_card_name">Dr. Gladys West</h2>
+                <span class="hero_card_role">Mathematician and GPS Contributor</span>
+
+                <!-- Use the opening paragraph from the full profile as a preview and limit the visible text so both cards stay consistent. SY -->
+                <p class="hero_card_description">
+                    Dr. Gladys West was an American mathematician whose work helped create the mathematical foundation for modern GPS technology. She grew up in rural Virginia and pursued education as a way to build a different future for herself. Dr. Gladys West studied mathematics at Virginia State College, a Historically Black College and University, where she earned both her bachelor's and master's degree. In 1956, she began working as a mathematician at the U.S. Naval Provision Ground in Dahlgren, Virginia.
+                </p>
+            </a>
+            <a href="timnit_gebru.html" class="hero_card">
+                <div class="hero_card_picture">
+                    <img src="images/gebru_cover.png" alt="Dr. Timnit Gebru">
+                </div>
+                <h2 class="hero_card_name">Dr. Timnit Gebru</h2>
+                <span class="hero_card_role">AI Researcher and AI Ethics Advocate</span>
+                <p class="hero_card_description">
+                    Dr. Timnit Gebru is an AI researcher whose work focuses on bias, representation, and the social impacts of artificial intelligence. She earned her PhD from the Stanford Artificial Intelligence Laboratory, where she studied computer vision. She later worked on algorithmic bias and the ethical implications of AI at Microsoft Research and Google. She also co-founded Black in AI and later founded the Distributed AI Research Institute (DAIR), which supports research focused on the social impacts of AI.
+                </p>
+            </a>
+        </div>
+    </section>
+            
+    <!-- Shared footer used on all pages. SY -->
+    <footer>
+        <p>
+            LIS 500 Code & Power · UW-Madison · 2026 · Shu-Fan Yang & Tanya McNeal
+        </p>
+    </footer>
+</body>
+</html>

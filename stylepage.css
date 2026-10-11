@@ -779,5 +779,31 @@ footer {
     text-align: left;
     color: #243746;
 }
-    
-  
+
+/*Next Tech Hero Profile TM*/
+.next-profile {
+    background-color: #FFFFFF;
+    padding: 40px;
+    margin-top: 40px;
+}
+  .next-porfile a {
+      color: #4B7772;
+      font-family: 'Inter', sans-serif;
+      font-size: 15 px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+  }
+.next-arrow {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    font-size 18px;
+    align-items: center;
+    line-height: 1;
+}
+.next-profile a: hover {
+    text-decpratation: underline;
+) 

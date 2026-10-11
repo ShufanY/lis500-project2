@@ -1,4 +1,4 @@
-/* Reset default browser spacing so all pages start with a consistent layout. SY */
+5/* Reset default browser spacing so all pages start with a consistent layout. SY */
 * {
     box-sizing: border-box; /* Include padding and border in the total width and height. SY */
     margin: 0;
@@ -779,7 +779,12 @@ footer {
     text-align: left;
     color: #243746;
 }
-
+/* Timnit Article Link TM*/
+.hero-article-link,
+.hero-article-link:visited {
+    color: #7C6699;
+    text-decoration: underline;
+}
 /* Next Tech Hero Profile TM */
 .next-profile {
     background-color: transparent; 

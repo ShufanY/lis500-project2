@@ -805,19 +805,19 @@ footer {
     text-decoration: underline;
 }
 /* Back to Tech Hero Profile TM */
-.back-tech-heros {
-    margin: 0 0 30px;
+.back-tech-heroes {
+    margin: 0 0 40px;
     text-align: left; 
 }
-.back-tech-heros a, 
-.back-tech-heros a:visited {
+.back-tech-heroes a, 
+.back-tech-heroes a:visited {
     color: #4B7772;
       font-family: 'Inter', sans-serif;
       font-size: 16px;
       font-weight: 500;
       text-decoration: none;
 } 
-.back-tech-heros a:hover {
+.back-tech-heroes a:hover {
     text-decoration: underline;
 } 
 

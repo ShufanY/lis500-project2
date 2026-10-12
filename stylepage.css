@@ -1,4 +1,4 @@
-5/* Reset default browser spacing so all pages start with a consistent layout. SY */
+/* Reset default browser spacing so all pages start with a consistent layout. SY */
 * {
     box-sizing: border-box; /* Include padding and border in the total width and height. SY */
     margin: 0;
@@ -564,7 +564,7 @@ footer {
     flex: 1;
     width: 840px;
     margin: 0 auto; 
-    padding: 80px 0 136px;
+    padding: 80px 0 160px;
     color: #243746;
 }
 
@@ -717,7 +717,7 @@ footer {
 }
 .video_description{
     width: 768px;
-    margin: 24px auto 0;
+    margin: 12px auto 0;
     font-family: "Inter", sans-serif; 
     font-size: 14px; 
     font-weight: 400;
@@ -783,23 +783,24 @@ footer {
 .hero-article-link,
 .hero-article-link:visited {
     color: #7C6699;
-    text-decoration: underline;
+    font-weight: 500;
+}
+.hero-article-link:hover {
+    color: #243746;
 }
 /* Next Tech Hero Profile TM */
 .next-profile {
     background-color: transparent; 
-    padding: 40px 0;
-    margin-top: 40px;
+    margin-top: 80px;
     text-align: right; 
 }
-  .next-profile a {
+.next-profile a {
       color: #4B7772;
       font-family: 'Inter', sans-serif;
-      font-size: 15px;
-      font-weight: 600;
+      font-size: 16px;
+      font-weight: 500;
       text-decoration: none;
 }
 .next-profile a:hover {
     text-decoration: underline;
-} 
-) 
+}

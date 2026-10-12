@@ -804,3 +804,20 @@ footer {
 .next-profile a:hover {
     text-decoration: underline;
 }
+/* Back to Tech Hero Profile TM */
+.back-tech-heros {
+    margin: 20px 0 30px 0;
+    text-align: left; 
+}
+.back-tech-heros a, 
+.back-tech-heros a:visited {
+    color: #4B7772;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+} 
+.back-tech-heros a:hover {
+    text-decoration; underline;
+} 
+
